@@ -20,6 +20,10 @@
         <i id="menu-btn" class="fas fa-bars"></i>
     </section>
 
+    <section>
+        
+    </section>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./javascript/script.js"></script>
 </body>

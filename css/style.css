@@ -104,8 +104,9 @@ section {
     padding: 2rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
   }
-  .header-navbar:active {
+  .header-navbar--active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -114,11 +115,11 @@ section {
     margin: 2rem;
     text-align: center;
   }
-  .header .fa-bars {
+  .header .fa-bars .fa-times {
     display: inline-block;
     transition: 0.2s linear;
   }
-  .header .fa-bars .fa-times {
+  .header .fa-bars .fa-times .fa-times {
     transform: rotate(180deg);
   }
 }
