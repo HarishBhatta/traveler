@@ -350,6 +350,49 @@ section {
   }
 }
 
+.book {
+  width: 100%;
+  &-heading {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center 70% !important;
+    background-blend-mode: saturation;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & h1 {
+      color: $white;
+      text-shadow: $text-shadow;
+      font-size: 10rem;
+    }
+  }
+  &-container {
+    background-color: $light-bg;
+    &--title {
+    }
+    &--form {
+      padding: 2rem;
+      & .flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        & .inputbox {
+          flex: 1 1 41rem;
+          & input {
+            width: 100%;
+            padding: 1.2rem 1.4rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   section {
     padding: 3rem 5%;
