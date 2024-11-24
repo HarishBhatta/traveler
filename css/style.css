@@ -33,6 +33,12 @@ html::-webkit-scrollbar-thumb {
 section {
   padding: 5rem 10%;
 }
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 
 .header {
   position: sticky;
@@ -82,12 +88,214 @@ section {
   font-size: 1.8rem;
   cursor: pointer;
   color: #222;
+  display: none;
+}
+
+.home {
+  padding: 0;
+}
+.home-slider--slide {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 60rem;
+}
+.home-slider--slide_content {
+  width: 85rem;
+  display: none;
+}
+.home-slider--slide_content span {
+  display: block;
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 1rem;
+  animation: fadeIn 0.3s linear backwards 0.2s;
+}
+.home-slider--slide_content h3 {
+  font-size: 6vw;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  animation: fadeIn 0.3s linear backwards 0.4s;
+}
+.home-slider--slide_content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  animation: fadeIn 0.3s linear backwards 0.6s;
+}
+.home-slider--slide_content .btn:hover {
+  background: #8e44ad;
+}
+.home .swiper-slide-active .home-slider--slide_content {
+  display: inline-block;
+}
+.home .swiper-button-next,
+.home .swiper-button-prev {
+  top: inherit;
+  left: inherit;
+  bottom: 0;
+  right: 0;
+  height: 7rem;
+  width: 7rem;
+  background-color: #fff;
+  color: #222;
+}
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover {
+  background-color: #8e44ad;
+  color: #fff;
+}
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after {
+  font-size: 2rem;
+}
+.home .swiper-button-prev {
+  right: 7rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  animation: fadeIn 0.3s linear backwards 0.6s;
+}
+.btn:hover {
+  background: #8e44ad;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #222;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
+.services-container--box {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #8e44ad;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.services-container--box:hover {
+  background-color: #222;
+}
+.services-container--box img {
+  height: 7rem;
+}
+.services-container--box h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+
+.homeabout {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.homeabout-image {
+  flex: 1 1 41rem;
+}
+.homeabout-image img {
+  width: 100%;
+}
+.homeabout-content {
+  flex: 1 1 41rem;
+  padding: 3rem;
+}
+.homeabout-content h3 {
+  font-size: 3rem;
+  color: #222;
+}
+.homeabout-content p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+  color: #222;
+  line-height: 2;
+}
+
+.homepackage {
+  background: #eee;
+}
+.homepackage-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+}
+.homepackage-container--box {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 1rem;
+}
+.homepackage-container--box_image {
+  height: 25rem;
+  overflow: hidden;
+}
+.homepackage-container--box_image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s linear;
+}
+.homepackage-container--box_content {
+  padding: 2rem;
+  text-align: center;
+}
+.homepackage-container--box_content h3 {
+  font-size: 2.5rem;
+  color: #222;
+}
+.homepackage-container--box_content p {
+  font-size: 1.5rem;
+  color: #222;
+  line-height: 2;
+  padding: 1rem 0rem;
+}
+.homepackage-loadmore {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.homeoffer {
+  text-align: center;
+}
+.homeoffer-content {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.homeoffer-content h3 {
+  font-size: 3rem;
+  color: #222;
+}
+.homeoffer-content p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2;
+  padding: 1rem 0;
 }
 
 .footer {
-  background: url("../images/footer.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #222;
 }
 .footer-container {
   display: grid;
@@ -136,6 +344,9 @@ section {
   }
   section {
     padding: 3rem 2rem;
+  }
+  .home-slider--slide_content h3 {
+    font-size: 10vw;
   }
 }
 @media (max-width: 768px) {

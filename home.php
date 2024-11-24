@@ -22,6 +22,122 @@
         <i id="menu-btn" class="fas fa-bars"></i>
     </section>
 
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="home-slider--slide swiper-slide" style="background: url(./images/image2.jpg) no-repeat;">
+                    <div class="home-slider--slide_content">
+                        <span>explore, discover</span>
+                        <h3>travel around the world</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+                <div class="home-slider--slide swiper-slide" style="background: url(./images/image3.jpg) no-repeat;">
+                    <div class="home-slider--slide_content">
+                        <span>explore, discover</span>
+                        <h3>discover the new places</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+                <div class="home-slider--slide swiper-slide" style="background: url(./images/image1.jpg) no-repeat;">
+                    <div class="home-slider--slide_content">
+                        <span>explore, discover</span>
+                        <h3>make your tour worthwhile</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1 class="services-title">Our Services</h1>
+        <div class="services-container">
+            <div class="services-container--box">
+                <img src="./images/adventure.svg" alt="">
+                <h3>adventures</h3>
+            </div>
+            <div class="services-container--box">
+                <img src="./images/tour.svg" alt="">
+                <h3>tour guide</h3>
+            </div>
+            <div class="services-container--box">
+                <img src="./images/trekking.svg" alt="">
+                <h3>trekking</h3>
+            </div>
+            <div class="services-container--box">
+                <img src="./images/fire.svg" alt="">
+                <h3>camp fire</h3>
+            </div>
+            <div class="services-container--box">
+                <img src="./images/offroad.svg" alt="">
+                <h3>off road</h3>
+            </div>
+            <div class="services-container--box">
+                <img src="./images/camping.svg" alt="">
+                <h3>camping</h3>
+            </div>
+        </div>
+    </section>
+    <section class="homeabout">
+        <div class="homeabout-image">
+            <img src="./images/image3.avif" alt="">
+        </div>
+        <div class="homeabout-content">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla neque laboriosam temporibus incidunt blanditiis hic perspiciatis. Distinctio nisi architecto natus quo, ipsum aut, illo facilis est dolor, deserunt incidunt?</p>
+            <a href="about.php" class="btn">read more</a>
+        </div>
+    </section>
+    <section class="homepackage">
+        <h1 class="services-title">Our packages</h1>
+        <div class="homepackage-container">
+            <div class="homepackage-container--box">
+                <div class="homepackage-container--box_image">
+                    <img src="./images/taj.avif" alt="">
+                </div>
+                <div class="homepackage-container--box_content">
+                    <h3>adventure & tourism</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="homepackage-container--box">
+                <div class="homepackage-container--box_image">
+                    <img src="./images/paris.jpg" alt="">
+                </div>
+                <div class="homepackage-container--box_content">
+                    <h3>adventure & tourism</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="homepackage-container--box">
+                <div class="homepackage-container--box_image">
+                    <img src="./images/gate.avif" alt="">
+                </div>
+                <div class="homepackage-container--box_content">
+                    <h3>adventure & tourism</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consequatur.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+        <div class="homepackage-loadmore">
+            <a href="book.php" class="btn">Load More</a>
+        </div>
+    </section>
+
+    <section class="homeoffer">
+        <div class="homeoffer-content">
+            <h3>upto 50% off</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut expedita maiores nulla aliquid, repellendus officia facere doloribus dicta dolore, sint, odit consequatur libero animi? Quae fuga nisi nemo soluta impedit?</p>
+            <a href="book.php" class="btn">book now</a>
+        </div>
+    </section>
+
     <section class="footer">
         <div class="footer-container">
             <div class="footer-container--box">
