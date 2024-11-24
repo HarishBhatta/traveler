@@ -9,6 +9,10 @@
   text-transform: capitalize;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -80,6 +84,47 @@ section {
   color: #222;
 }
 
+.footer {
+  background: url("../images/footer.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+.footer-container--box h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+.footer-container--box a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.25rem;
+  padding-bottom: 1.5rem;
+  display: block;
+}
+.footer-container--box a i {
+  color: #8e44ad;
+  padding-right: 0.5rem;
+  transition: 0.2s linear;
+}
+.footer-container--box a:hover i {
+  padding-right: 2rem;
+}
+.footer-credit {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer-credit span {
+  color: #8e44ad;
+}
+
 @media (max-width: 1200px) {
   section {
     padding: 3rem 5%;
@@ -94,6 +139,10 @@ section {
   }
 }
 @media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
   .header-navbar {
     position: absolute;
     top: 99%;
@@ -115,12 +164,13 @@ section {
     margin: 2rem;
     text-align: center;
   }
-  .header .fa-bars .fa-times {
-    display: inline-block;
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
     transition: 0.2s linear;
   }
-  .header .fa-bars .fa-times .fa-times {
-    transform: rotate(180deg);
+  #menu-btn.fa-times {
+    display: inline-block;
+    transition: 0.2s linear;
   }
 }
 @media (max-width: 450px) {
