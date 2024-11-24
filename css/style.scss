@@ -382,6 +382,10 @@ section {
         gap: 2rem;
         & .inputbox {
           flex: 1 1 41rem;
+          & span {
+            font-size: 1.5rem;
+            padding-bottom: 1.5rem;
+          }
           & input {
             width: 100%;
             padding: 1.2rem 1.4rem;
